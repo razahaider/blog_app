@@ -1,0 +1,6 @@
+<h1>Welcome to Blog</h1>
+<% @posts.each do |post| %>
+	<%= post.title %><br/>
+	<%= truncate(post.body, :length => 35) %><br/>
+	<%= link_to "Read Post", post %><br/>
+<%end%>
